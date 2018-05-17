@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git@github.com:jwill9999/resume-example.git"
   },
-  "homepage": "https://jwill9999.github.io/resume-example",
+  "homepage": "http://localhost/resume",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^0.12.0",
