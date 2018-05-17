@@ -2,16 +2,16 @@
   "main": {
     "name": "Agustín Gregorieu",
     "occupation": "Information Systems Engineer",
-    "description": "I travel the world with my camera and tell storys in a way no other media can.",
+    "description": "I enjoy working in challenging software projects.",
     "image": "profilepic.jpg",
-    "bio": "I am a French Photographer and I have worked in PhotoJournalism now for 15 years. I have had the opportunity to travel the world and document some of the most important events in history",
+    "bio": "I am a Argentinean Engineer and I have worked in PhotoJournalism now for 15 years. I have had the opportunity to travel the world and document some of the most important events in history",
     "email": "agustin.gregorieu@gmail.com",
     "phone": "+54 9 3515298313",
     "address": {
       "street": "Eguía Zanón 9988",
       "city": "Córdoba",
       "state": "Argentina",
-      "zip": "5021"
+      "zip": "X5021CJT"
     },
     "website": "http://www.parisphoto.com/paris/exhibitors",
     "resumedownload": "#",
@@ -50,6 +50,12 @@
   },
   "resume": {
     "education": [
+      {
+        "school": "University of Massachusetts at Amherst",
+        "degree": "Fulbright Scholarship",
+        "graduated": "6 weeks of attendance",
+        "description": "I attended to Machine Learning classes at UMass for about 6 weeks"
+      },
       {
         "school": "National Technological University",
         "degree": "Information Systems Engineering",
@@ -108,10 +114,6 @@
       },
       {
         "name": "Angular",
-        "level": "40%"
-      },
-      {
-        "name": "PHP",
         "level": "40%"
       },
       {
