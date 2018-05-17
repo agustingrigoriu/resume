@@ -30,7 +30,6 @@ class Contact extends Component {
     
     event.preventDefault();
 
-    
   }
 
   render() {
@@ -121,6 +120,7 @@ class Contact extends Component {
         </div>
 
       </section>
+      
     );
   }
 }
