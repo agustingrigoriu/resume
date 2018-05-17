@@ -4,8 +4,8 @@
   "private": true,
   "description": "Single page resume using React",
   "author": {
-    "name": "Jason Williams",
-    "email": "jwill9999@icloud.com"
+    "name": "Agustín Gregorieu",
+    "email": "agustin.gregorieu@gmail.com"
   },
   "keywords": [
     "React",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:jwill9999/resume-example.git"
+    "url": "git@gitlab.com:Gregorieu/resume.git"
   },
   "homepage": "http://localhost/resume",
   "license": "ISC",
