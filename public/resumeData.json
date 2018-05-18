@@ -54,13 +54,15 @@
         "school": "National Technological University",
         "degree": "Information Systems Engineering",
         "graduated": "December 2017",
+        "historic_average": "9.37/10",
         "description": "Completed and graduated with the Information Systems Engineer degree at the UTN of Córdoba."
       },
       {
         "school": "National College of Monserrat",
         "degree": "Humanistic Bachelor",
         "graduated": "December 2012",
-        "description": "Bachelor at the secondary schoo where I studied. My historic average was of 8.01/10."
+        "historic_average": "8.01/10",
+        "description": "Bachelor at the secondary schoo where I studied."
       }
     ],
     "work": [
