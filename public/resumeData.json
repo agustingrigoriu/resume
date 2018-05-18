@@ -4,7 +4,7 @@
     "occupation": "Information Systems Engineer",
     "description": "I enjoy working in challenging software projects.",
     "image": "profilepic.jpg",
-    "bio": "I am an Argentinean Engineer and I have worked in PhotoJournalism now for 15 years. I have had the opportunity to travel the world and document some of the most important events in history",
+    "bio": "I consider myself to be a proactive and analytical person. I am fully dedicated to the service, and I am highly interested in learning and updating my knowledge about the market’s new tendencies and new technologies.",
     "email": "agustin.gregorieu@gmail.com",
     "phone": "+54 9 3515298313",
     "address": {
@@ -14,7 +14,7 @@
       "zip": "X5021CJT"
     },
     "website": "http://www.parisphoto.com/paris/exhibitors",
-    "resumedownload": "#",
+    "resumedownload": "resume.pdf",
     "social": [
       {
         "name": "facebook",
@@ -39,12 +39,6 @@
         "url": "http://github.com/agustingrigoriu",
         "className": "fa fa-github",
         "target": "_blank"
-      },
-      {
-        "name": "skype",
-        "url": "http://skype.com",
-        "className": "fa fa-skype",
-        "target": "_blank"
       }
     ]
   },
@@ -54,7 +48,7 @@
         "school": "University of Massachusetts at Amherst",
         "degree": "Fulbright Scholarship",
         "graduated": "6 weeks of attendance",
-        "description": "I attended to Machine Learning classes at UMass for about 6 weeks"
+        "description": "I attended to Machine Learning classes at UMass for about 6 weeks."
       },
       {
         "school": "National Technological University",
