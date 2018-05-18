@@ -81,8 +81,8 @@ header .banner-text h3 a {
 header .banner-text hr {
    width: 60%;
    margin: 18px auto 24px auto;
-   border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
+   /* border-color: #fff; */
+   border-color: rgba(255, 255, 255, 0.3);
 }
 
 /* header social links */
