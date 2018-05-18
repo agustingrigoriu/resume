@@ -79,6 +79,40 @@
         "description": "Development of diagnostic imaging software and administrative systems."
       }
     ],
+    "languages": [
+      {
+        "language": "English",
+        "levels": [
+          "First Certificate in English: Council of Europe Level B2",
+          "Preliminary English Test: Council of Europe Level B1",
+          "TOEFL (Online Practice Test): 112/120"
+        ]
+      },
+      {
+        "language": "Spanish",
+        "levels": [
+          "Native Speaker"
+        ]
+      },
+      {
+        "language": "Spanish",
+        "levels": [
+          "Native Speaker"
+        ]
+      },
+      {
+        "language": "French",
+        "levels": [
+          "Basic Knowledge"
+        ]
+      },
+      {
+        "language": "Japanese",
+        "levels": [
+          "Intensive Course (60+ Hours) // Blas Pascal University"
+        ]
+      }
+    ],
     "skills": [
       {
         "name": "Javascript",
