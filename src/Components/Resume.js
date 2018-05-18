@@ -42,7 +42,7 @@ class Resume extends Component {
 
       var languages = this.props.data.languages.map(function (language) {
         var levels = language && language.levels && language.levels.map(function (level) {
-          return <p className="info"><span>&bull;</span> <em className="date">{level}</em></p>;
+          return <p className="info"><span>&bull;</span> {level}</p>;
         });
         return (
           <div key={language.language} className="row item">
