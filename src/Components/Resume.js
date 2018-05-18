@@ -49,7 +49,8 @@ class Resume extends Component {
             <div className="twelve columns">
               <h3>{language.language}</h3>
               {levels}
-              
+              {/* Agrego un margin */}
+              <p></p> 
             </div>
           </div>);
       });
