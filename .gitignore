@@ -64,3 +64,6 @@ typings/
 build/*
 
 # End of https://www.gitignore.io/api/node
+build/asset-manifest.json
+build/index.html
+build/css/layout.css

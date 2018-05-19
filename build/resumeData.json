@@ -4,9 +4,10 @@
     "occupation": "Information Systems Engineer",
     "description": "I enjoy working in challenging software projects.",
     "image": "profilepic.jpg",
-    "bio": "I am a Argentinean Engineer and I have worked in PhotoJournalism now for 15 years. I have had the opportunity to travel the world and document some of the most important events in history",
+    "bio": "I consider myself to be a proactive and analytical person. I am fully dedicated to the service, and I am highly interested in learning and updating my knowledge about the market’s new tendencies and new technologies.",
     "email": "agustin.gregorieu@gmail.com",
     "phone": "+54 9 3515298313",
+    "date_of_birth": "October 12, 1994",
     "address": {
       "street": "Eguía Zanón 9988",
       "city": "Córdoba",
@@ -14,7 +15,7 @@
       "zip": "X5021CJT"
     },
     "website": "http://www.parisphoto.com/paris/exhibitors",
-    "resumedownload": "#",
+    "resumedownload": "resume.pdf",
     "social": [
       {
         "name": "facebook",
@@ -39,12 +40,6 @@
         "url": "http://github.com/agustingrigoriu",
         "className": "fa fa-github",
         "target": "_blank"
-      },
-      {
-        "name": "skype",
-        "url": "http://skype.com",
-        "className": "fa fa-skype",
-        "target": "_blank"
       }
     ]
   },
@@ -54,19 +49,21 @@
         "school": "University of Massachusetts at Amherst",
         "degree": "Fulbright Scholarship",
         "graduated": "6 weeks of attendance",
-        "description": "I attended to Machine Learning classes at UMass for about 6 weeks"
+        "description": "I attended to Machine Learning classes at UMass for about 6 weeks."
       },
       {
         "school": "National Technological University",
         "degree": "Information Systems Engineering",
         "graduated": "December 2017",
+        "historic_average": "9.37/10",
         "description": "Completed and graduated with the Information Systems Engineer degree at the UTN of Córdoba."
       },
       {
         "school": "National College of Monserrat",
         "degree": "Humanistic Bachelor",
         "graduated": "December 2012",
-        "description": "Bachelor at the secondary schoo where I studied. My historic average was of 8.01/10."
+        "historic_average": "8.01/10",
+        "description": "Bachelor at the secondary school where I studied."
       }
     ],
     "work": [
@@ -77,10 +74,44 @@
         "description": "UI Development of the new ESPN.COM website under the Disney Studios area. Currently using ReactJS."
       },
       {
-        "company": "InformeMedico.com",
+        "company": "InformeMedico.com.ar",
         "title": "Full Stack Web Developer",
         "years": "March 2017 - present",
         "description": "Development of diagnostic imaging software and administrative systems."
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "levels": [
+          "First Certificate in English: Council of Europe Level B2",
+          "Preliminary English Test: Council of Europe Level B1",
+          "TOEFL (Online Practice Test): 112/120"
+        ]
+      },
+      {
+        "language": "Spanish",
+        "levels": [
+          "Native Speaker"
+        ]
+      },
+      {
+        "language": "Spanish",
+        "levels": [
+          "Native Speaker"
+        ]
+      },
+      {
+        "language": "French",
+        "levels": [
+          "Basic Knowledge"
+        ]
+      },
+      {
+        "language": "Japanese",
+        "levels": [
+          "Intensive Course (60+ Hours) // Blas Pascal University"
+        ]
       }
     ],
     "skills": [
