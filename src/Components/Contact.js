@@ -26,52 +26,52 @@ class Contact extends Component {
   }
 
   handleSubmit(event) {
-    const name = this.state.name,
-      email = this.state.email,
-      subject = this.state.subject,
-      message = this.state.message,
-      data = {};
+    // const name = this.state.name,
+    //   email = this.state.email,
+    //   subject = this.state.subject,
+    //   message = this.state.message,
+    //   data = {};
 
-    data.name = name;
-    data.email = email;
-    data.subject = subject;
-    data.message = message;
+    // data.name = name;
+    // data.email = email;
+    // data.subject = subject;
+    // data.message = message;
 
-    this.setState({
-      name: '', email: '', subject: '', message: ''
-    })
+    // this.setState({
+    //   name: '', email: '', subject: '', message: ''
+    // })
 
-    event.preventDefault();
+    // event.preventDefault();
 
-    $.ajax({
-      type: "POST",
-      url: "inc/sendEmail.php",
-      data: $(form).serialize(),
+    // $.ajax({
+    //   type: "POST",
+    //   url: "inc/sendEmail.php",
+    //   data: $(form).serialize(),
 
-      beforeSend: function () {
-        sLoader.fadeIn();
-      },
-      success: function (msg) {
-        // Message was sent
-        if (msg == 'OK') {
-          sLoader.fadeOut();
-          $('#message-warning').hide();
-          $('#contactForm').fadeOut();
-          $('#message-success').fadeIn();
-        }
-        // There was an error
-        else {
-          sLoader.fadeOut();
-          $('#message-warning').html(msg);
-          $('#message-warning').fadeIn();
-        }
-      },
-      error: function () {
-        sLoader.fadeOut();
-        $('#message-warning').html("Something went wrong. Please try again.");
-        $('#message-warning').fadeIn();
-      }
-    });
+    //   beforeSend: function () {
+    //     sLoader.fadeIn();
+    //   },
+    //   success: function (msg) {
+    //     // Message was sent
+    //     if (msg == 'OK') {
+    //       sLoader.fadeOut();
+    //       $('#message-warning').hide();
+    //       $('#contactForm').fadeOut();
+    //       $('#message-success').fadeIn();
+    //     }
+    //     // There was an error
+    //     else {
+    //       sLoader.fadeOut();
+    //       $('#message-warning').html(msg);
+    //       $('#message-warning').fadeIn();
+    //     }
+    //   },
+    //   error: function () {
+    //     sLoader.fadeOut();
+    //     $('#message-warning').html("Something went wrong. Please try again.");
+    //     $('#message-warning').fadeIn();
+    //   }
+    // });
 
   }
 
