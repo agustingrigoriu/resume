@@ -12,7 +12,7 @@ class Contact extends Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    
+
   }
   handleChange(event) {
     const target = event.target;
@@ -22,13 +22,56 @@ class Contact extends Component {
     this.setState({
       [name]: value
     });
-   
+
   }
 
-  handleSubmit(event) { 
-    name.value = "",
-    
+  handleSubmit(event) {
+    const name = this.state.name,
+      email = this.state.email,
+      subject = this.state.subject,
+      message = this.state.message,
+      data = {};
+
+    data.name = name;
+    data.email = email;
+    data.subject = subject;
+    data.message = message;
+
+    this.setState({
+      name: '', email: '', subject: '', message: ''
+    })
+
     event.preventDefault();
+
+    $.ajax({
+      type: "POST",
+      url: "inc/sendEmail.php",
+      data: $(form).serialize(),
+
+      beforeSend: function () {
+        sLoader.fadeIn();
+      },
+      success: function (msg) {
+        // Message was sent
+        if (msg == 'OK') {
+          sLoader.fadeOut();
+          $('#message-warning').hide();
+          $('#contactForm').fadeOut();
+          $('#message-success').fadeIn();
+        }
+        // There was an error
+        else {
+          sLoader.fadeOut();
+          $('#message-warning').html(msg);
+          $('#message-warning').fadeIn();
+        }
+      },
+      error: function () {
+        sLoader.fadeOut();
+        $('#message-warning').html("Something went wrong. Please try again.");
+        $('#message-warning').fadeIn();
+      }
+    });
 
   }
 
@@ -59,31 +102,31 @@ class Contact extends Component {
 
           <div className="eight columns">
 
-            <form  onSubmit={this.handleSubmit}  id="contactForm" name="contactForm">
+            <form onSubmit={this.handleSubmit} id="contactForm" name="contactForm">
               <fieldset>
 
                 <div>
                   <label htmlFor="contactName">Name <span className="required">*</span></label>
-                  <input type="text"  size="35" id="contactName" placeholder="Name Required" name='name'  value={this.state.name} onChange={this.handleChange} />
+                  <input type="text" size="35" id="contactName" placeholder="Name Required" name='name' value={this.state.name} onChange={this.handleChange} />
                 </div>
 
                 <div>
                   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                  <input type="text"  size="35" id="contactEmail" placeholder="Email Required" name="email" value={this.state.email} onChange={this.handleChange} />
+                  <input type="text" size="35" id="contactEmail" placeholder="Email Required" name="email" value={this.state.email} onChange={this.handleChange} />
                 </div>
 
                 <div>
                   <label htmlFor="contactSubject">Subject</label>
-                  <input type="text"  size="35" placeholder="Subject Title" id="contactSubject" name="subject" value={this.state.subject} onChange={this.handleChange}   />
+                  <input type="text" size="35" placeholder="Subject Title" id="contactSubject" name="subject" value={this.state.subject} onChange={this.handleChange} />
                 </div>
 
                 <div>
                   <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                  <textarea cols="50" rows="15" id="contactMessage"  placeholder="Main Message" name="message"  value={this.state.message} onChange={this.handleChange}></textarea >
+                  <textarea cols="50" rows="15" id="contactMessage" placeholder="Main Message" name="message" value={this.state.message} onChange={this.handleChange}></textarea >
                 </div>
 
                 <div>
-                 
+
                   <button type='submit' className="submit">Submit</button>
                   <span id="image-loader">
                     <img alt="" src="images/loader.gif" />
@@ -120,7 +163,7 @@ class Contact extends Component {
         </div>
 
       </section>
-      
+
     );
   }
 }
