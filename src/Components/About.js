@@ -23,8 +23,9 @@ class About extends Component {
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
-            <p>{bio}
-            </p>
+            {bio.split('\n').map(line => <p>{line}</p>)}
+            {/* <p>{bio}
+            </p> */}
             <div className="row">
               <div className="columns contact-details">
                 <h2>Contact Details</h2>
