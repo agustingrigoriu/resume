@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
 
 class Contact extends Component {
@@ -26,52 +27,52 @@ class Contact extends Component {
   }
 
   handleSubmit(event) {
-    // const name = this.state.name,
-    //   email = this.state.email,
-    //   subject = this.state.subject,
-    //   message = this.state.message,
-    //   data = {};
+    event.preventDefault();
+ 
+    //Save email data
+    const data = {};
+    data.name = this.state.name;
+    data.email = this.state.email;
+    data.subject = this.state.subject;
+    data.message = this.state.message;
+    console.log(data);
 
-    // data.name = name;
-    // data.email = email;
-    // data.subject = subject;
-    // data.message = message;
+    //Cleaning form
+    this.setState({
+      name: '', email: '', subject: '', message: ''
+    })
 
-    // this.setState({
-    //   name: '', email: '', subject: '', message: ''
-    // })
+    var sLoader = $('#image-loader');
 
-    // event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: process.env.PUBLIC_URL + "/inc/sendEmail.php",
+      data: $(data).serialize(),
 
-    // $.ajax({
-    //   type: "POST",
-    //   url: "inc/sendEmail.php",
-    //   data: $(form).serialize(),
-
-    //   beforeSend: function () {
-    //     sLoader.fadeIn();
-    //   },
-    //   success: function (msg) {
-    //     // Message was sent
-    //     if (msg == 'OK') {
-    //       sLoader.fadeOut();
-    //       $('#message-warning').hide();
-    //       $('#contactForm').fadeOut();
-    //       $('#message-success').fadeIn();
-    //     }
-    //     // There was an error
-    //     else {
-    //       sLoader.fadeOut();
-    //       $('#message-warning').html(msg);
-    //       $('#message-warning').fadeIn();
-    //     }
-    //   },
-    //   error: function () {
-    //     sLoader.fadeOut();
-    //     $('#message-warning').html("Something went wrong. Please try again.");
-    //     $('#message-warning').fadeIn();
-    //   }
-    // });
+      beforeSend: function () {
+        sLoader.fadeIn();
+      },
+      success: function (msg) {
+        // Message was sent
+        if (msg == 'OK') {
+          sLoader.fadeOut();
+          $('#message-warning').hide();
+          $('#contactForm').fadeOut();
+          $('#message-success').fadeIn();
+        }
+        // There was an error
+        else {
+          sLoader.fadeOut();
+          $('#message-warning').html(msg);
+          $('#message-warning').fadeIn();
+        }
+      },
+      error: function () {
+        sLoader.fadeOut();
+        $('#message-warning').html("Something went wrong. Please try again.");
+        $('#message-warning').fadeIn();
+      }
+    });
 
   }
 
