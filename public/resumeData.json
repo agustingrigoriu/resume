@@ -49,21 +49,24 @@
         "school": "University of Massachusetts at Amherst",
         "degree": "Fulbright Scholarship",
         "graduated": "6 weeks of attendance",
-        "description": "I attended to Machine Learning classes at UMass for about 6 weeks."
+        "description": "I attended to Machine Learning classes at UMass for about 6 weeks.",
+        "file": ""
       },
       {
         "school": "National Technological University",
         "degree": "Information Systems Engineering",
         "graduated": "December 2017",
         "historic_average": "9.37/10",
-        "description": "Completed and graduated with the Information Systems Engineer degree at the UTN of Córdoba."
+        "description": "Completed and graduated with the Information Systems Engineer degree at the UTN of Córdoba.",
+        "file": "UTN.pdf"
       },
       {
         "school": "National College of Monserrat",
         "degree": "Humanistic Bachelor",
         "graduated": "December 2012",
         "historic_average": "8.01/10",
-        "description": "Bachelor at the secondary school where I studied."
+        "description": "Bachelor at the secondary school where I studied.",
+        "file": ""
       }
     ],
     "work": [

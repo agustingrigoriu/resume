@@ -5,15 +5,16 @@ class Resume extends Component {
   render() {
     if (this.props.data) {
       var education = this.props.data.education.map(function (edu) {
+        var url = (edu && edu.file && process.env.PUBLIC_URL + '/documents/' + edu.file) || '#';
+        var downloadIcon = <a target="_blank" href={url}><i className="fa fa-download"></i></a>;
         var historic_average = edu.historic_average && (
           <span>
             &bull;
             <em className="date"> Historic Average: <b>{edu.historic_average}</b></em>
           </span>) || '';
-        console.log(historic_average);
         return <div key={edu.school} className="row item">
           <div className="twelve columns">
-            <h3>{edu.school}</h3>
+            <h3>{edu.school} &nbsp; {edu && edu.file && downloadIcon}</h3> 
             <p className="info">
               {edu.degree}
               <span>&bull;</span>
@@ -42,8 +43,7 @@ class Resume extends Component {
 
       var languages = this.props.data.languages.map(function (language) {
         var levels = language && language.levels && language.levels.map(function (level) {
-
-          var url = ( level && level.file && process.env.PUBLIC_URL + '/documents/' +  level.file ) || '#';
+          var url = (level && level.file && process.env.PUBLIC_URL + '/documents/' + level.file) || '#';
           var downloadIcon = <a target="_blank" href={url}><i className="fa fa-download"></i></a>;
           return <p className="info">
             <span>&bull;</span>
