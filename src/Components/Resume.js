@@ -42,10 +42,10 @@ class Resume extends Component {
       });
 
       var languages = this.props.data.languages.map(function (language) {
-        var levels = language && language.levels && language.levels.map(function (level) {
+        var levels = language && language.levels && language.levels.map(function (level, i) {
           var url = (level && level.file && process.env.PUBLIC_URL + '/documents/' + level.file) || '#';
           var downloadIcon = <a target="_blank" href={url}><i className="fa fa-download"></i></a>;
-          return <p className="info">
+          return <p key={i} className="info">
             <span>&bull;</span>
             {level.name} &nbsp; {level && level.file && downloadIcon}
           </p>;
