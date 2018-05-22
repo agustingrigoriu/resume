@@ -171,9 +171,9 @@
     "projects": [
       {
         "title": "SmartMonitor",
-        "description": "An image taking for a commercial project",
-        "category": "Photoshop",
-        "tags": "Branding, Web Design",
+        "description": "SmartMonitor consists of a customizable tool that allows people to monitor several critical aspects related to their business. For example, you can monitor the state of your servers, their disk space available, how some processes are working, among other things that need to be constantly followed.",
+        "category": "Software",
+        "tags": "Network, Software",
         "image": "mystic.jpg",
         "url": "http://port1.com",
         "modal": "#modal-01"
