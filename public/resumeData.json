@@ -84,27 +84,36 @@
       {
         "language": "English",
         "levels": [
-          "First Certificate in English: Council of Europe Level B2",
-          "Preliminary English Test: Council of Europe Level B1",
-          "TOEFL (Online Practice Test): 112/120"
+          {
+            "name": "First Certificate in English: Council of Europe Level B2",
+            "file": "FCE.pdf"
+          },
+          {
+            "name": "Preliminary English Test: Council of Europe Level B1",
+            "file": "PET.pdf"
+          },
+          {
+            "name": "TOEFL (Online Practice Test): 112/120",
+            "file": "TOEFL_PT.pdf"
+          }
         ]
       },
       {
         "language": "Spanish",
         "levels": [
-          "Native Speaker"
-        ]
-      },
-      {
-        "language": "Spanish",
-        "levels": [
-          "Native Speaker"
+          {
+            "name": "Native Speaker",
+            "file": ""
+          }
         ]
       },
       {
         "language": "Japanese",
         "levels": [
-          "Intensive Course (60+ Hours) // Blas Pascal University"
+          {
+            "name": "Intensive Course (60+ Hours) // Blas Pascal University",
+            "file": "JAPANESE.pdf"
+          }
         ]
       }
     ],

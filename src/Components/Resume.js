@@ -42,7 +42,15 @@ class Resume extends Component {
 
       var languages = this.props.data.languages.map(function (language) {
         var levels = language && language.levels && language.levels.map(function (level) {
-          return <p className="info"><span>&bull;</span> {level}</p>;
+
+          var url = ( level && level.file && process.env.PUBLIC_URL + '/documents/' +  level.file ) || '#';
+          return <p className="info">
+            <span>&bull;</span>
+            {level.name} &nbsp;
+            <a target="_blank" href={url}>
+              <i className="fa fa-download"></i>
+            </a>
+          </p>;
         });
         return (
           <div key={language.language} className="row item">
@@ -50,7 +58,7 @@ class Resume extends Component {
               <h3>{language.language}</h3>
               {levels}
               {/* Agrego un margin */}
-              <p></p> 
+              <p></p>
             </div>
           </div>);
       });
