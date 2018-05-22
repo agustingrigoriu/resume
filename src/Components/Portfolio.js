@@ -5,7 +5,7 @@ class Portfolio extends Component {
   render() {
     if(this.props.data){
       var portfolio = this.props.data.projects.map(function(project){        
-        var imageUrl = 'images/portfolio/'+ project.image;
+        var imageUrl = process.env.PUBLIC_URL + '/images/portfolio/'+ project.image;
         return <div key={project.title} className="columns portfolio-item">
            <div className="item-wrap">
               <a href={project.modal} title="">
