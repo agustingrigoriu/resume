@@ -44,12 +44,10 @@ class Resume extends Component {
         var levels = language && language.levels && language.levels.map(function (level) {
 
           var url = ( level && level.file && process.env.PUBLIC_URL + '/documents/' +  level.file ) || '#';
+          var downloadIcon = <a target="_blank" href={url}><i className="fa fa-download"></i></a>;
           return <p className="info">
             <span>&bull;</span>
-            {level.name} &nbsp;
-            <a target="_blank" href={url}>
-              <i className="fa fa-download"></i>
-            </a>
+            {level.name} &nbsp; {level && level.file && downloadIcon}
           </p>;
         });
         return (
