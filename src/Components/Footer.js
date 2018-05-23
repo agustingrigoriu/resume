@@ -12,8 +12,8 @@ class Footer extends Component {
 
 
             <ul className="copyright">
-               <li>&copy; Copyright 2017 Henri Leroy </li>
-               <li>Design by <a target="_blank" href="https://www.linkedin.com/in/letuscode/">Jason Williams</a></li>
+               <li>&copy; gregorieu.com</li>
+               <li>Developed using ReactJS</li>
             </ul>
 
          </div>
