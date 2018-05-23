@@ -14,8 +14,8 @@ class Header extends Component {
       });
     }
     return (
-      <div className="background">
-        <header id="home">
+      <header id="home">
+        <div className="overlay"></div>
           <nav id="nav-wrap">
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
             <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
@@ -32,7 +32,7 @@ class Header extends Component {
           <div className="row banner">
             <div className="banner-text">
               <h1 className="responsive-headline">{name}</h1>
-              <h3>I'm an <span>{occupation}</span> based in {city}. <br/> {description}</h3>
+              <h3>I'm an <span>{occupation}</span> based in {city}. <br /> {description}</h3>
               <hr />
               <ul className="social">
                 {networks}
@@ -44,9 +44,8 @@ class Header extends Component {
           </p>
 
         </header>
-      </div>
-    );
-  }
-}
-
-export default Header;
+        );
+      }
+    }
+    
+    export default Header;
