@@ -30,7 +30,7 @@ class Portfolio extends Component {
             <h1>Check Out Some of My Works.</h1>
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
                {/* {portfolio} */}
-               Under development
+               <h1 style={{color:"red"}}><b>Under development</b></h1>
             </div>
          </div>
       </div>
