@@ -175,7 +175,7 @@
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "smartmonitor.png",
-        "url": "",
+        "files": "",
         "modal": "#modal-01"
       },
       {
@@ -184,7 +184,7 @@
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "imtranscript.png",
-        "url": "",
+        "files": "",
         "modal": "#modal-02"
       },
       {
@@ -193,7 +193,10 @@
         "category": "Mobile App",
         "tags": "Ionic, C#",
         "image": "",
-        "url": "",
+        "files": [
+          {"name":"Paper", "file": "prihood-paper.pdf"},
+          {"name":"Poster", "file": "prihood-poster.pdf"}
+        ],
         "modal": "#modal-03"
       }
     ]
