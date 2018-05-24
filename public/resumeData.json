@@ -180,7 +180,7 @@
       },
       {
         "title": "imTranscript",
-        "description": "imTranscript is a tool that allows transcriptionists to manage and follow the transcription assignations. The idea is that a coordinator can assign to the transcriptionists studies that need to be transcripted. The transcriptionist will be able to access their studies, listen to the doctor record, and transcript the study, among many other features. \nThe technologies used are: JS, HTML+CSS, Lazarus/FreePascal, and PostgreSQL.",
+        "description": "imTranscript is a tool that allows transcriptionists to manage and follow the transcription assignations. The idea is that a coordinator can assign to the transcriptionists studies that need to be transcripted. The transcriptionist will be able to access their studies, listen to the doctor's record, and transcript the study, among many other features. \nThe technologies used are: JS, HTML+CSS, Lazarus/FreePascal, and PostgreSQL.",
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "imtranscript.png",
