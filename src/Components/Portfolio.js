@@ -24,7 +24,7 @@ class Portfolio extends Component {
     return (
       <section id="portfolio">
 
-        <h1>Check Out Some of My Works.</h1>
+        <h1 className="title">Check Out Some of My Works.</h1>
         {portfolio}
 
       </section>

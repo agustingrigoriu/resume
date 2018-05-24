@@ -19,6 +19,11 @@
     font: 18px/24px 'opensans-bold', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: left;
+}
+
+#portfolio .title {
+    text-align: center;
 }
 
 #portfolio h1 span {
