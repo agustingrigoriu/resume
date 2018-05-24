@@ -174,7 +174,7 @@
         "description": "SmartMonitor consists of a customizable tool that allows people to monitor several critical aspects related to their business. For example, you can monitor the state of your servers, their disk space available, how some processes are working, among other things that need to be constantly followed.",
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
-        "image": "mystic.jpg",
+        "image": "smartmonitor.jpg",
         "url": "",
         "modal": "#modal-01"
       },
@@ -183,16 +183,16 @@
         "description": "imTranscript is a tool that allows transcriptionists to manage and follow the transcription assignations. ",
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
-        "image": "console.jpg",
+        "image": "imtranscript.jpg",
         "url": "",
         "modal": "#modal-02"
       },
       {
         "title": "PriHood",
-        "description": "PriHood was my Information Systems Engineering thesis project, the idea was to develop an hybrid mobile app capable of automating several processes of the life in private neighborhoods. As a resident you are able to share your trip by car (car pooling), to book amenities, to emit alerts in case of robberies or emergencies, to create events, among many others very useful functionalities. This was developed using Ionic and C# mostly",
+        "description": "PriHood was my Information Systems Engineering thesis project, the idea was to develop an hybrid mobile app capable of automating several processes of the life in private neighborhoods. As a resident you are able to share your trip by car (car pooling), to book amenities, to emit alerts in case of robberies or emergencies, to create events, among many others very useful functionalities. This was developed using Ionic and C# mostly.",
         "category": "Mobile App",
         "tags": "Ionic, C#",
-        "image": "judah.jpg",
+        "image": "prihood.jpg",
         "url": "",
         "modal": "#modal-03"
       }

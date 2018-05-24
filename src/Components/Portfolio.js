@@ -13,7 +13,7 @@ class Portfolio extends Component {
             </div>
 
             <div className="nine columns main-col">
-              <p>{project.description}</p>
+              {project.description.split('\n').map(line => <p>{line}</p>)}
               <img src={imageUrl} />
             </div>
           </div>
