@@ -3,38 +3,31 @@ import React, { Component } from 'react';
 
 class Portfolio extends Component {
   render() {
-    if(this.props.data){
-      var portfolio = this.props.data.projects.map(function(project){        
-        var imageUrl = process.env.PUBLIC_URL + '/images/portfolio/'+ project.image;
-        return <div key={project.title} className="columns portfolio-item">
-           <div className="item-wrap">
-              <a href={project.modal} title="">
-                 <img alt="" src={imageUrl} />
-                 <div className="overlay">
-                    <div className="portfolio-item-meta">
-                   <h5>{project.title}</h5>
-                       <p>{project.category}</p>
-                </div>
-                 </div>
-                 
-              </a>
+    if (this.props.data) {
+      var portfolio = this.props.data.projects.map(function (project) {
+        var imageUrl = process.env.PUBLIC_URL + '/images/portfolio/' + project.image;
+        return (
+          <div className="row work">
+            <div className="three columns header-col">
+              <h1><span>{project.title}</span></h1>
+            </div>
 
-           </div>
-       </div>
+            <div className="nine columns main-col">
+              <p>{project.description}</p>
+              <img src={imageUrl} />
+            </div>
+          </div>
+        );
+
       });
     }
     return (
       <section id="portfolio">
-      <div className="row">
-         <div className="twelve columns collapsed">
-            <h1>Check Out Some of My Works.</h1>
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-               {/* {portfolio} */}
-               <h1 style={{color:"red"}}><b>Under development</b></h1>
-            </div>
-         </div>
-      </div>
-   </section>
+
+        <h1>Check Out Some of My Works.</h1>
+        {portfolio}
+
+      </section>
     );
   }
 }
