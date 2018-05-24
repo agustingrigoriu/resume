@@ -4,6 +4,7 @@ require "PHPMailer.php";
 require "Exception.php";
 
 if ($_POST) {
+try{
     $name = trim(stripslashes($_POST['name']));
     $email = trim(stripslashes($_POST['email']));
     $subject = trim(stripslashes($_POST['subject']));
@@ -31,7 +32,7 @@ if ($_POST) {
     $mail->Port = 25;
 
     $mail->setFrom($email, $name);
-    $mail->addAddress('agustin@gregorieu.com', 'Agustín Gregorieu');
+    $mail->addAddress('agustin.gregorieu@gmail.com', 'Agustín Gregorieu');
     $mail->isHTML(false);
     $mail->Subject = $subject;
     $mail->Body = $contact_message;
@@ -42,7 +43,7 @@ if ($_POST) {
             echo 'Message could not be sent.';
             echo 'Mailer Error: ' . $mail->ErrorInfo;
         } else {
-            echo 'Message has been sent';
+            echo 'OK';
         }
           
     } else {
@@ -54,6 +55,12 @@ if ($_POST) {
           echo $response;
   
     } # end if - there was a validation error
-      
+
+} catch (Exception $e) {
+    header('HTTP/1.1 500 Internal Server Booboo');
+    header('Content-Type: application/json; charset=UTF-8');
+    die(json_encode(array('message' => getMessage(), 'code' => 1337)));
+}
+
 }
 ?>

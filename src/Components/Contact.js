@@ -46,7 +46,7 @@ class Contact extends Component {
     $.ajax({
       type: "POST",
       url: process.env.PUBLIC_URL + "/inc/sendEmail.php",
-      data: $(data).serialize(),
+      data: data,
 
       beforeSend: function () {
         sLoader.fadeIn();
@@ -55,18 +55,21 @@ class Contact extends Component {
         // Message was sent
         if (msg == 'OK') {
           sLoader.fadeOut();
+          console.log("aca", msg);
           $('#message-warning').hide();
           $('#contactForm').fadeOut();
           $('#message-success').fadeIn();
         }
         // There was an error
         else {
+          console.log("error en el php call", msg);
           sLoader.fadeOut();
           $('#message-warning').html(msg);
           $('#message-warning').fadeIn();
         }
       },
-      error: function () {
+      error: function (xhr) {
+        console.log("error en el ajax call", xhr);
         sLoader.fadeOut();
         $('#message-warning').html("Something went wrong. Please try again.");
         $('#message-warning').fadeIn();
