@@ -35,7 +35,6 @@ class Contact extends Component {
     data.email = this.state.email;
     data.subject = this.state.subject;
     data.message = this.state.message;
-    console.log(data);
 
     //Cleaning form
     this.setState({

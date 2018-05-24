@@ -26,21 +26,15 @@ if ($_POST) {
     
     $mail = new PHPMailer\PHPMailer\PHPMailer();
 
-    $mail->From = 'agustin@gregorieu.com';
-    $mail->FromName = 'Mailer';
-    $mail->addAddress('name@domain.com', 'User'); // Add a recipient
-    $mail->addAddress('ellen@example.com'); // Name is optional
-    $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addCC('cc@example.com');
-    $mail->addBCC('bcc@example.com');
+    $mail->isSMTP();
+    $mail->Host = 'localhost';
+    $mail->Port = 25;
 
-    $mail->addAttachment(''); // Add attachments
-    $mail->addAttachment('/tmp/image.jpg', 'new.jpg'); // Optional name
-    $mail->isHTML(true); // Set email format to HTML
-
-    $mail->Subject = 'Here is the subject';
-    $mail->Body = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->setFrom($email, $name);
+    $mail->addAddress('agustin@gregorieu.com', 'Agustín Gregorieu');
+    $mail->isHTML(false);
+    $mail->Subject = $subject;
+    $mail->Body = $contact_message;
 
     if (!$error) {
 
