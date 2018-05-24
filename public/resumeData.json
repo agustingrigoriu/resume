@@ -171,7 +171,7 @@
     "projects": [
       {
         "title": "SmartMonitor",
-        "description": "SmartMonitor consists of a customizable tool that allows people to monitor several critical aspects related to their business. For example, you can monitor the state of your servers, their disk space available, how some processes are working, among other things that need to be constantly followed.",
+        "description": "SmartMonitor consists of a customizable tool that allows people to monitor several critical aspects related to their business. For example, you can monitor the state of your servers, their disk space available, how some processes are working, gather data from your databases to show information you really need, among other things that need to be constantly followed. \nThe technologies used are: JS, HTML+CSS, Pascal, Python, PostgreSQL and ShellScripts.",
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "smartmonitor.png",
@@ -180,7 +180,7 @@
       },
       {
         "title": "imTranscript",
-        "description": "imTranscript is a tool that allows transcriptionists to manage and follow the transcription assignations. ",
+        "description": "imTranscript is a tool that allows transcriptionists to manage and follow the transcription assignations. The idea is that a coordinator can assign to the transcriptionists studies that need to be transcripted. The transcriptionist will be able to access their studies, listen to the doctor record, and transcript the study, among many other features. \nThe technologies used are: JS, HTML+CSS, Pascal, and PostgreSQL.",
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "imtranscript.png",
@@ -189,7 +189,7 @@
       },
       {
         "title": "PriHood",
-        "description": "PriHood was my Information Systems Engineering thesis project, the idea was to develop an hybrid mobile app capable of automating several processes of the life in private neighborhoods. As a resident you are able to share your trip by car (car pooling), to book amenities, to emit alerts in case of robberies or emergencies, to create events, among many others very useful functionalities. This was developed using Ionic and C# mostly.",
+        "description": "PriHood was my Information Systems Engineering thesis project, the idea was to develop an hybrid mobile app capable of automating several processes of the life in private neighborhoods. As a resident you are able to share your trip by car (car pooling), to book amenities, to emit alerts in case of robberies or emergencies, to create events, and many other very useful functionalities. \nThe technologies used were: Ionic, Angular, C# and MySQL ",
         "category": "Mobile App",
         "tags": "Ionic, C#",
         "image": "",
