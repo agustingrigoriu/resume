@@ -5,8 +5,8 @@ class Portfolio extends Component {
   render() {
     if (this.props.data) {
       var portfolio = this.props.data.projects.map(function (project) {
-        var imageUrl = process.env.PUBLIC_URL + '/images/portfolio/' + project.image;
-        var imgElement = imageUrl && (<a target="_blank" href={imageUrl}><img src={imageUrl} /></a>);
+        var imageUrl = project && project.image && process.env.PUBLIC_URL + '/images/portfolio/' + project.image;
+        var imgElement = imageUrl && (<a target="_blank" href={imageUrl}><img src={imageUrl} /></a>) || '';
         return (
           <div className="row work">
             <div className="three columns header-col">
