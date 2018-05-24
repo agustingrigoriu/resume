@@ -6,6 +6,7 @@ class Portfolio extends Component {
     if (this.props.data) {
       var portfolio = this.props.data.projects.map(function (project) {
         var imageUrl = process.env.PUBLIC_URL + '/images/portfolio/' + project.image;
+        var imgElement = imageUrl && (<a target="_blank" href={imageUrl}><img src={imageUrl} /></a>);
         return (
           <div className="row work">
             <div className="three columns header-col">
@@ -14,7 +15,7 @@ class Portfolio extends Component {
 
             <div className="nine columns main-col">
               {project.description.split('\n').map(line => <p>{line}</p>)}
-              <a target="_blank" href={imageUrl}><img src={imageUrl} /></a>
+              {imgElement}
             </div>
           </div>
         );
