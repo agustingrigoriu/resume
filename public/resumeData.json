@@ -194,8 +194,8 @@
         "tags": "Ionic, C#",
         "image": "",
         "files": [
-          {"name":"Paper", "file": "prihood-paper.pdf"},
-          {"name":"Poster", "file": "prihood-poster.pdf"}
+          {"name":"Paper", "url": "prihood-paper.pdf"},
+          {"name":"Poster", "url": "prihood-poster.pdf"}
         ],
         "modal": "#modal-03"
       }

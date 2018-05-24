@@ -7,6 +7,16 @@ class Portfolio extends Component {
       var portfolio = this.props.data.projects.map(function (project) {
         var imageUrl = project && project.image && process.env.PUBLIC_URL + '/images/portfolio/' + project.image;
         var imgElement = imageUrl && (<a target="_blank" href={imageUrl}><img src={imageUrl} /></a>) || '';
+
+        var files = project && project.files && project.files.map(function (file, i) {
+          var url = (file && file.url && process.env.PUBLIC_URL + '/documents/' + file.url) || '#';
+          var downloadItem = <a target="_blank" href={url}>{file.name}</a>;
+          return <p className="info">
+            <span>&bull;</span>
+            {file && downloadItem}
+          </p>;
+        });
+
         return (
           <div className="row work">
             <div className="three columns header-col">
@@ -16,21 +26,22 @@ class Portfolio extends Component {
             <div className="nine columns main-col">
               {project.description.split('\n').map(line => <p>{line}</p>)}
               {imgElement}
+              {files}
             </div>
           </div>
-        );
-
-      });
-    }
-    return (
+              );
+      
+            });
+          }
+          return (
       <section id="portfolio">
 
-        <h1 className="title">Check Out Some of My Works.</h1>
-        {portfolio}
+                <h1 className="title">Check Out Some of My Works.</h1>
+                {portfolio}
 
-      </section>
-    );
-  }
-}
-
-export default Portfolio;
+              </section>
+              );
+            }
+          }
+          
+          export default Portfolio;
