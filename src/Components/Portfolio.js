@@ -14,7 +14,7 @@ class Portfolio extends Component {
 
             <div className="nine columns main-col">
               {project.description.split('\n').map(line => <p>{line}</p>)}
-              <img src={imageUrl} />
+              <a target="_blank" href={imageUrl}><img src={imageUrl} /></a>
             </div>
           </div>
         );
