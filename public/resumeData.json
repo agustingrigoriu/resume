@@ -158,7 +158,7 @@
         "level": "40%"
       },
       {
-        "name": "Pascal/Lazarus",
+        "name": "Lazarus/FreePascal",
         "level": "70%"
       },
       {
@@ -171,7 +171,7 @@
     "projects": [
       {
         "title": "SmartMonitor",
-        "description": "SmartMonitor consists of a customizable tool that allows people to monitor several critical aspects related to their business. For example, you can monitor the state of your servers, their disk space available, how some processes are working, gather data from your databases to show information you really need, among other things that need to be constantly followed. \nThe technologies used are: JS, HTML+CSS, Pascal, Python, PostgreSQL and ShellScripts.",
+        "description": "SmartMonitor consists of a customizable tool that allows people to monitor several critical aspects related to their business. For example, you can monitor the state of your servers, their disk space available, how some processes are working, gather data from your databases to show information you really need, among other things that need to be constantly followed. \nThe technologies used are: JS, HTML+CSS, Lazarus/FreePascal, Python, PostgreSQL and ShellScripts.",
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "smartmonitor.png",
@@ -180,7 +180,7 @@
       },
       {
         "title": "imTranscript",
-        "description": "imTranscript is a tool that allows transcriptionists to manage and follow the transcription assignations. The idea is that a coordinator can assign to the transcriptionists studies that need to be transcripted. The transcriptionist will be able to access their studies, listen to the doctor record, and transcript the study, among many other features. \nThe technologies used are: JS, HTML+CSS, Pascal, and PostgreSQL.",
+        "description": "imTranscript is a tool that allows transcriptionists to manage and follow the transcription assignations. The idea is that a coordinator can assign to the transcriptionists studies that need to be transcripted. The transcriptionist will be able to access their studies, listen to the doctor record, and transcript the study, among many other features. \nThe technologies used are: JS, HTML+CSS, Lazarus/FreePascal, and PostgreSQL.",
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "imtranscript.png",
