@@ -51,4 +51,31 @@ class About extends Component {
   }
 }
 
+
+About.defaultProps = {
+  name: "",
+  image: "",
+  bio: "",
+  street: "",
+  city: "",
+  state: "",
+  zip: "",
+  phone: "",
+  email: "",
+  resumedownload: ""
+};
+
+About.propTypes = {
+  name: React.PropTypes.string,
+  image: React.PropTypes.string,
+  bio: React.PropTypes.string,
+  street: React.PropTypes.string,
+  city: React.PropTypes.string,
+  state: React.PropTypes.string,
+  zip: React.PropTypes.string,
+  phone: React.PropTypes.string,
+  email: React.PropTypes.string,
+  resumedownload: React.PropTypes.string
+}
+
 export default About;
