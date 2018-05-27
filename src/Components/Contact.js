@@ -53,7 +53,7 @@ class Contact extends Component {
       },
       success: function (msg) {
         // Message was sent
-        if (msg == 'OK') {
+        if (msg === 'OK') {
           sLoader.fadeOut();
           $('#message-warning').hide();
           $('#contactForm').fadeOut();

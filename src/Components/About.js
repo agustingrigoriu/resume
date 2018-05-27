@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 require('../../public/resumeData.json');
 
 class About extends Component {
@@ -23,7 +24,7 @@ class About extends Component {
           </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
-            {bio.split('\n').map(line => <p>{line}</p>)}
+            {bio.split('\n').map((line, index) => <p key={index}>{line}</p>)}
             {/* <p>{bio}
             </p> */}
             <div className="row">
@@ -53,29 +54,37 @@ class About extends Component {
 
 
 About.defaultProps = {
-  name: "",
-  image: "",
-  bio: "",
-  street: "",
-  city: "",
-  state: "",
-  zip: "",
-  phone: "",
-  email: "",
-  resumedownload: ""
+  data: {
+    name: "",
+    image: "",
+    bio: "",
+    adress: {
+      street: "",
+      city: "",
+      state: "",
+      zip: "",
+    },
+    phone: "",
+    email: "",
+    resumedownload: ""
+  }
 };
 
 About.propTypes = {
-  name: React.PropTypes.string,
-  image: React.PropTypes.string,
-  bio: React.PropTypes.string,
-  street: React.PropTypes.string,
-  city: React.PropTypes.string,
-  state: React.PropTypes.string,
-  zip: React.PropTypes.string,
-  phone: React.PropTypes.string,
-  email: React.PropTypes.string,
-  resumedownload: React.PropTypes.string
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    image: PropTypes.string,
+    bio: PropTypes.string,
+    adress: PropTypes.shape({
+      street: PropTypes.string,
+      city: PropTypes.string,
+      state: PropTypes.string,
+      zip: PropTypes.string
+    }),
+    phone: PropTypes.string,
+    email: PropTypes.string,
+    resumedownload: PropTypes.string
+  })
 }
 
 export default About;
