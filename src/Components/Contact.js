@@ -34,18 +34,18 @@ class Contact extends Component {
               <fieldset>
 
                 <div>
-                  <label htmlFor="contactName">Name <span className="required">*</span></label>
-                  <input type="text" size="35" id="contactName" placeholder="Name Required" name='name' />
+                  <label htmlFor="contactName">Name</label>
+                  <input type="text" size="35" placeholder="Your Name" name='name' />
                 </div>
 
                 <div>
                   <label htmlFor="contactSubject">Subject</label>
-                  <input type="text" size="35" placeholder="Subject Title" id="contactSubject" name="subject" />
+                  <input type="text" size="35" placeholder="Subject Title" name="subject" />
                 </div>
 
                 <div>
-                  <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                  <textarea cols="50" rows="15" id="contactMessage" placeholder="Main Message" name="body" ></textarea >
+                  <label htmlFor="contactMessage">Message</label>
+                  <textarea cols="50" rows="15" placeholder="Message" name="body" ></textarea >
                 </div>
 
                 <div>
