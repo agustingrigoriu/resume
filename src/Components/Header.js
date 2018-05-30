@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 
 class Header extends Component {
@@ -61,16 +62,16 @@ Header.defaultProps = {
 };
 
 Header.propTypes = {
-  data: React.PropTypes.shape({
-    name: React.PropTypes.string,
-    occupation: React.PropTypes.string,
-    description: React.PropTypes.string,
-    social: React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        name: React.PropTypes.string,
-        url: React.PropTypes.string,
-        className: React.PropTypes.string,
-        target: React.PropTypes.string
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    occupation: PropTypes.string,
+    description: PropTypes.string,
+    social: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        url: PropTypes.string,
+        className: PropTypes.string,
+        target: PropTypes.string
       })
     )
   })
