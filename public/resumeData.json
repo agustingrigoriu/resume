@@ -142,16 +142,16 @@
         "level": "70%"
       },
       {
-        "name": "C#",
-        "level": "60%"
+        "name": "C# / .NET Core",
+        "level": "70%"
       },
       {
         "name": "ReactJS",
         "level": "60%"
       },
       {
-        "name": "Angular",
-        "level": "40%"
+        "name": "Angular 2/4",
+        "level": "50%"
       },
       {
         "name": "PHP",
@@ -163,7 +163,7 @@
       },
       {
         "name": "GIT",
-        "level": "70%"
+        "level": "80%"
       }
     ]
   },
