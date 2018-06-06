@@ -1089,6 +1089,10 @@ call-to-action .button {
     width: 26%;
 }
 
+textarea {
+    resize: none;
+}
+
 #contact input,
 #contact textarea,
 #contact select {
@@ -1113,19 +1117,19 @@ call-to-action .button {
 #contact button.submit {
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #fff;
-    background: #0D0D0D;
+    color: #0D0D0D;
+    background: #fff;
     border: none;
     cursor: pointer;
     height: auto;
-    display: inline-block;
     border-radius: 3px;
-    margin-left: 26%;
+    margin-right: 9%;
+    float: right;
 }
 
 #contact button.submit:hover {
-    color: #0D0D0D;
-    background: #fff;
+    color: #fff;
+    background: #0D0D0D;
 }
 
 #contact span#required {
