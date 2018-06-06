@@ -1117,8 +1117,8 @@ textarea {
 #contact button.submit {
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #0D0D0D;
-    background: #fff;
+    color: #fff;
+    background: #373233;
     border: none;
     cursor: pointer;
     height: auto;
@@ -1128,8 +1128,8 @@ textarea {
 }
 
 #contact button.submit:hover {
-    color: #fff;
-    background: #0D0D0D;
+    color: #0D0D0D;
+    background: #fff;
 }
 
 #contact span#required {
@@ -1218,6 +1218,7 @@ footer a:focus {
 footer .copyright {
     margin: 0;
     padding: 0;
+    color: rgb(205, 197, 197);
 }
 
 footer .copyright li {
