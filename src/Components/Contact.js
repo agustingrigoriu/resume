@@ -30,15 +30,15 @@ class Contact extends Component {
 
           <div className="eight columns">
 
-            <form action={"mailto:" + email} method="GET" id="contactForm" name="contactForm">
+            <form  enctype="text/plain" action={"mailto:" + email} method="GET"  id="contactForm" name="contactForm">
               <fieldset>
 
-                <div>
+                {/* <div>
                   <label htmlFor="contactName">Name</label>
                   <input type="text" size="35" placeholder="Your Name" name='name' />
-                </div>
+                </div> */}
 
-                <div>
+                {/* <div>
                   <label htmlFor="contactSubject">Subject</label>
                   <input type="text" size="35" placeholder="Subject Title" name="subject" />
                 </div>
@@ -46,10 +46,10 @@ class Contact extends Component {
                 <div>
                   <label htmlFor="contactMessage">Message</label>
                   <textarea cols="50" rows="15" placeholder="Message" name="body" ></textarea >
-                </div>
+                </div> */}
 
                 <div>
-                  <button type='submit' className="submit">Send</button>
+                  <button type='submit' className="submit">Send Email</button>
                 </div>
 
               </fieldset>
