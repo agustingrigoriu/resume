@@ -4,7 +4,7 @@
     "occupation": "Information Systems Engineer",
     "description": "I enjoy working in challenging software projects.",
     "image": "profilepic.jpg",
-    "bio": "Hello! My name is Agustín Gregorieu and I'm an Information Systems Engineer who likes traveling, I'm looking for jobs abroad related to the software development. I have worked exclusively on projects oriented towards the web environment. I have experience using several tools as you will be able to appreciate in the ''skills'' section, most of them related to Web Development. \n I have the need to emphasize that although I'm young and I have lack of experience in some technologies, I'm a very quick and enthusiastic learner. I consider myself to be a proactive and analytical person. I'm fully dedicated to the service, and I'm highly interested in learning and updating my knowledge about the market’s new tendencies and new technologies.",
+    "bio": "Hello! My name is Agustín Gregorieu and I'm an Information Systems Engineer. I have worked exclusively on projects oriented towards the web environment. I have experience using several tools as you will be able to appreciate in the ''skills'' section, most of them related to Web Development. \n I have the need to emphasize that although I'm young and I have lack of experience in some technologies, I'm a very quick and enthusiastic learner. I consider myself to be a proactive and analytical person. I'm fully dedicated to the service, and I'm highly interested in learning and updating my knowledge about the market’s new tendencies and new technologies.",
     "email": "agustin.gregorieu@gmail.com",
     "phone": "+54 9 3515298313",
     "date_of_birth": "October 12, 1994",
@@ -192,10 +192,16 @@
         "description": "PriHood was my Information Systems Engineering thesis project, the idea was to develop an hybrid mobile app capable of automating several processes of the life in private neighborhoods. As a resident you are able to share your trip by car (car pooling), to book amenities, to emit alerts in case of robberies or emergencies, to create events, and many other very useful functionalities. \nThe technologies used were: Ionic, Angular, C# and MySQL. \n You can see this project in my GitHub account.",
         "category": "Mobile App",
         "tags": "Ionic, C#",
-        "image": "",  
+        "image": "",
         "files": [
-          {"name":"Paper", "url": "prihood-paper.pdf"},
-          {"name":"Poster", "url": "prihood-poster.pdf"}
+          {
+            "name": "Paper",
+            "url": "prihood-paper.pdf"
+          },
+          {
+            "name": "Poster",
+            "url": "prihood-poster.pdf"
+          }
         ],
         "modal": "#modal-03"
       }
