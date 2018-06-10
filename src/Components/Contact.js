@@ -21,7 +21,7 @@ class Contact extends Component {
           </div>
 
           <div className="ten columns">
-            <p className="lead">Please feel free to contact me and I will return your email so we can keep in touch. Please fill out the form and note * items are required before submission.
+            <p className="lead">Please feel free to contact me and I will return your email so we can keep in touch.
                   </p>
 
           </div>
@@ -30,7 +30,7 @@ class Contact extends Component {
 
           <div className="eight columns">
 
-            <form  enctype="text/plain" action={"mailto:" + email} method="GET"  id="contactForm" name="contactForm">
+            <form enctype="text/plain" action={"mailto:" + email} method="GET" id="contactForm" name="contactForm">
               <fieldset>
 
                 {/* <div>
