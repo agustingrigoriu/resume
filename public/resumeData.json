@@ -199,6 +199,15 @@
         "modal": "#modal-02"
       },
       {
+        "title": "imRis",
+        "description": "RIS stands for Radiological Information System and is a core part of any imaging department at hospitals or clinics. The major functions are: resource management (such as equipment) and patient scheduling. \nThe technologies used are: JS, HTML+CSS, Lazarus/FreePascal, and PostgreSQL.",
+        "category": "Web Software",
+        "tags": "Javascript, HTML, CSS, Linux",
+        "image": "imris.png",
+        "modal": "#modal-02",
+        "files": ""
+      },
+      {
         "title": "PriHood",
         "description": "PriHood was my Information Systems Engineering thesis project, the idea was to develop an hybrid mobile app capable of automating several processes of the life in private neighborhoods. As a resident you are able to share your trip by car (car pooling), to book amenities, to emit alerts in case of robberies or emergencies, to create events, and many other very useful functionalities. \nThe technologies used were: Ionic, Angular, C# and MySQL. \n You can see this project in my GitHub account.",
         "category": "Mobile App",
