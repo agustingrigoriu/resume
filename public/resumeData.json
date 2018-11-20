@@ -186,8 +186,7 @@
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "smartmonitor.png",
-        "files": "",
-        "modal": "#modal-01"
+        "links": ""
       },
       {
         "title": "imTranscript",
@@ -195,8 +194,7 @@
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "imtranscript.png",
-        "files": "",
-        "modal": "#modal-02"
+        "links": ""
       },
       {
         "title": "imRis",
@@ -204,8 +202,21 @@
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "imris.png",
-        "modal": "#modal-02",
-        "files": ""
+        "links": ""
+      },
+      {
+        "title": "Shell-Deploy",
+        "description": "Shell Script deployer is made to improve the deployement of projects in remote servers. Developed using only Shell Script instructions.",
+        "category": "Web Software",
+        "tags": "Shell-Script",
+        "image": "",
+        "links": [
+          {
+            "name": "Watch it on Github",
+            "type": "url",
+            "url": "https://github.com/agustingrigoriu/Shell-Deploy"
+          }
+        ]
       },
       {
         "title": "PriHood",
@@ -213,13 +224,15 @@
         "category": "Mobile App",
         "tags": "Ionic, C#",
         "image": "",
-        "files": [
+        "links": [
           {
             "name": "Paper",
+            "type": "file",
             "url": "prihood-paper.pdf"
           },
           {
             "name": "Poster",
+            "type": "file",
             "url": "prihood-poster.pdf"
           }
         ],

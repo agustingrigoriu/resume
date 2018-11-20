@@ -13,8 +13,16 @@ class Portfolio extends Component {
             </a>
           )) || "";
 
-        var files = project.files && project.files.map(function (file, i) {
-          var downloadItem = file.url && <a target="_blank" href={process.env.PUBLIC_URL + '/documents/' + file.url}>{file.name}</a>;
+        var links = project.links && project.links.map(function (link, i) {
+          
+          var downloadItem = link.url && link.type === 'file' ? 
+            <a target="_blank" href={process.env.PUBLIC_URL + '/documents/' + link.url}>
+              {link.name}
+            </a> :
+            <a target="_blank" href={link.url}>
+              {link.name}
+            </a>;
+
           return <p key={i} className="info">
             <span>&bull;</span>
             {downloadItem}
@@ -30,7 +38,7 @@ class Portfolio extends Component {
             <div className="nine columns main-col">
               {project.description.split('\n').map((line, index) => <p key={index}>{line}</p>)}
               {imgElement}
-              {files}
+              {links}
             </div>
           </div>
         );
