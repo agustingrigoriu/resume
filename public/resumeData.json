@@ -198,6 +198,14 @@
         "links": ""
       },
       {
+        "title": "imDicomizer",
+        "description": "imDicomizer was developed in order to provide an easy user interface that allows the clinics to upload attachments to patients' studies in an easy way. After selecting the desired study, the next step is to drag the files that are going to be uploaded into the corresponding drag-and-drop area. \nThe technologies used are: React JS, Lazarus/FreePascal, and PostgreSQL. ",
+        "category": "Web Software",
+        "tags": "React, HTML, CSS, Linux",
+        "image": "imdicomizer.png",
+        "links": ""
+      },
+      {
         "title": "Shell-Deploy",
         "description": "Shell Script deployer is made to improve the deployement of projects in remote servers. Developed using only Shell Script instructions.",
         "category": "Web Software",
