@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git@gitlab.com:Gregorieu/resume.git"
   },
-  "homepage": "http://localhost/resume",
+  "homepage": "http://localhost/",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^0.12.0",
@@ -26,8 +26,7 @@
   "dependencies": {
     "jquery": "^3.1.1",
     "prop-types": "^15.6.1",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react": "^15.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
