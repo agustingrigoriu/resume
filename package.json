@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git@gitlab.com:Gregorieu/resume.git"
   },
-  "homepage": "http://localhost/",
+  "homepage": "http://www.gregorieu.com",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^0.12.0",
