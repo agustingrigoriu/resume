@@ -1,48 +1,86 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { Player } from "video-react";
 
+import "video-react/dist/video-react.css";
 
 class Portfolio extends Component {
   render() {
     if (this.props.data) {
-      var portfolio = this.props.data.projects.map(function (project, index) {
-        var imgElement = (project.image &&
-          (
-            <a target="_blank" href={process.env.PUBLIC_URL + '/images/portfolio/' + project.image}>
-              <img src={process.env.PUBLIC_URL + '/images/portfolio/' + project.image} role="presentation" />
+      var portfolio = this.props.data.projects.map(function(project, index) {
+        var imgElement =
+          (project.image && (
+            <a
+              target="_blank"
+              href={
+                process.env.PUBLIC_URL + "/images/portfolio/" + project.image
+              }
+            >
+              <img
+                src={
+                  process.env.PUBLIC_URL + "/images/portfolio/" + project.image
+                }
+                role="presentation"
+              />
             </a>
-          )) || "";
+          )) ||
+          "";
 
-        var links = project.links && project.links.map(function (link, i) {
-          
-          var downloadItem = link.url && link.type === 'file' ? 
-            <a target="_blank" href={process.env.PUBLIC_URL + '/documents/' + link.url}>
-              {link.name}
-            </a> :
-            <a target="_blank" href={link.url}>
-              {link.name}
-            </a>;
+        var links =
+          project.links &&
+          project.links.map(function(link, i) {
+            var downloadItem =
+              link.url && link.type === "file" ? (
+                <a
+                  target="_blank"
+                  href={process.env.PUBLIC_URL + "/documents/" + link.url}
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <a target="_blank" href={link.url}>
+                  {link.name}
+                </a>
+              );
 
-          return <p key={i} className="info">
-            <span>&bull;</span>
-            {downloadItem}
-          </p>;
-        });
+            return (
+              <p key={i} className="info">
+                <span>&bull;</span>
+                {downloadItem}
+              </p>
+            );
+          });
+
+        var videoElement =
+          (project.video && (
+            <Player>
+              <source
+                src={
+                  process.env.PUBLIC_URL + "/images/portfolio/" + project.video
+                }
+              />
+            </Player>
+          )) ||
+          "";
 
         return (
           <div key={index} className="row work">
             <div className="three columns header-col">
-              <h1><span>{project.title}</span></h1>
+              <h1>
+                <span>{project.title}</span>
+              </h1>
             </div>
 
             <div className="nine columns main-col">
-              {project.description.split('\n').map((line, index) => <p key={index}>{line}</p>)}
+              {project.description.split("\n").map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+              {videoElement}
               {imgElement}
               {links}
             </div>
           </div>
         );
-
       });
     }
     return (
@@ -53,7 +91,6 @@ class Portfolio extends Component {
     );
   }
 }
-
 
 Portfolio.defaultProps = {
   data: {
@@ -72,6 +109,6 @@ Portfolio.propTypes = {
       })
     )
   })
-}
+};
 
 export default Portfolio;
