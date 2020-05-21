@@ -169,7 +169,7 @@
       },
       {
         "name": "Flutter",
-        "level": "30%"
+        "level": "50%"
       },
       {
         "name": "Angular 2/4",
@@ -191,6 +191,14 @@
   },
   "portfolio": {
     "projects": [
+      {
+        "title": "imRecorder",
+        "description": "Cross-platform application, available for both Android and iOS. It allows the radiologist to report the studies from his mobile device by voice dictation, and then be transcribed from imPACS or imRIS. It is a simple and easy-to-use tool, which saves on the installation of a microphone and is practical for the professional who prefers to report images by dictation through their mobile device. \nThe technology used was Flutter. ",
+        "category": "Mobile Development",
+        "tags": "Flutter",
+        "image": "imrecorder.jpeg",
+        "links": ""
+      },
       {
         "title": "Databoard",
         "description": "Databoard is a trello-like tool customized to be used in hospitals in order to manage in a faster and better way the different appointments. The main idea of this tool is to be used in tablets, and it works in real time in order to deliver consistent information to the user.  \nThe technologies used are: React JS, Express, and PostgreSQL. ",
@@ -221,7 +229,13 @@
         "category": "Web Software",
         "tags": "Javascript, HTML, CSS, Linux",
         "image": "imris.png",
-        "links": ""
+        "links": [
+          {
+            "name": "Description website",
+            "type": "url",
+            "url": "http://informemedico.com.ar/productos/imris/"
+          }
+        ]
       },
       {
         "title": "imDicomizer",
