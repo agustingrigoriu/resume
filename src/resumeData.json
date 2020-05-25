@@ -4,7 +4,7 @@
     "occupation": "Information Systems Engineer",
     "description": "I enjoy working in challenging software projects.",
     "image": "profilepic.jpg",
-    "bio": "Hello! My name is Agustín Gregorieu and I'm an Information Systems Engineer. I have worked exclusively on projects oriented towards the web environment. I have experience using several tools as you will be able to appreciate in the ''skills'' section, most of them related to Web Development. \n I have the need to emphasize that although I'm young and I have lack of experience in some technologies, I'm a very quick and enthusiastic learner. I consider myself to be a proactive and analytical person. I'm fully dedicated to the service, and I'm highly interested in learning and updating my knowledge about the market’s new tendencies and new technologies.",
+    "bio": "Hello! My name is Agustín Gregorieu and I'm an Information Systems Engineer currently pursuing a master's degree in Computer Science at Northeastern University. I have experience working as a Full Stack Developer, and I am studying to further my knowledge of Machine Learning and related topics. \n I'm a very quick and enthusiastic learner. I consider myself to be a proactive and analytical person. I'm fully dedicated to the service, and I'm highly interested in learning and updating my knowledge about the market’s new tendencies and new technologies.",
     "email": "agustin.gregorieu@gmail.com",
     "phone": "+1 (406) 561-5300",
     "date_of_birth": "October 12, 1994",
@@ -81,7 +81,7 @@
       {
         "company": "Northeastern University",
         "title": "Teacher Assistant for the Information Retrieval course",
-        "years": "Jan 2020 - Present",
+        "years": "Jan 2020 - Apr 2020",
         "description": "Mentoring students, performing teaching or teaching-related duties to assist the professor, proctoring exams and grading tests/assignments."
       },
       {
@@ -198,6 +198,25 @@
         "tags": "Flutter",
         "image": "imrecorder.jpeg",
         "links": ""
+      },
+      {
+        "title": "HN-Search",
+        "description": "Hacker News (HN) can be defined as a mixture of both a news website and a forum. It is oriented towards presenting news related to technology and entrepreneurship. News are posted by HN users and the platform strives to guarantee good quality news, and dicussions generated from each of them. HN uses a search engine powered by Algolia to allow users search over the posts. I have detected that the results returned by Algolia are not what is expected from a search engine that works over news. In this project I am attempting to improve the search results given certain characteristics of the posts. \n The technologies used were Solr for the Back End and React for the Front End.",
+        "category": "Information retrieval",
+        "tags": "IR",
+        "image": "hn-search.png",
+        "links": [
+          {
+            "name": "Paper",
+            "type": "url",
+            "url": "https://github.com/agustingrigoriu/HN-Search/blob/master/documents/GREGORIEU_Report.pdf"
+          },
+          {
+            "name": "GitHub Repository",
+            "type": "url",
+            "url": "https://github.com/agustingrigoriu/HN-Search"
+          }
+        ]
       },
       {
         "title": "Databoard",
