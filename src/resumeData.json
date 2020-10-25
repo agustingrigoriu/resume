@@ -50,14 +50,14 @@
         "degree": "Master of Science in Computer Science",
         "graduated": "In progress - 2020/2021",
         "historic_average": "4.00",
-        "description": "Studying a master in computer science with a specialization in Data Science. Courses that I took: Programming Design Paradigm and Information Retrieval. Courses I am currently taking: Algorithms and Machine Learning.",
+        "description": "Studying a master in computer science with a specialization in Data Science. Courses that I took: Programming Design Paradigm, Information Retrieval, Machine Learning and Algorithms. Courses I am currently taking: Computer Systems, Software Security Vulnerabilities.",
         "file": "NEU.pdf"
       },
       {
         "school": "University of Massachusetts at Amherst",
         "degree": "Fulbright Scholarship",
         "graduated": "6 weeks of attendance",
-        "description": "I attended Machine Learning classes at UMass for about 6 weeks.",
+        "description": "Attended Machine Learning classes at UMass for about 6 weeks.",
         "file": "FULBRIGHT.pdf"
       },
       {
@@ -86,7 +86,7 @@
       },
       {
         "company": "Globant",
-        "title": "Junior UI Developer",
+        "title": "Junior Advanced UI Developer",
         "years": "March 2018 - July 2019",
         "description": "UI Development of the new ESPN.COM website under the Disney Studios area. Currently using ReactJS."
       },
